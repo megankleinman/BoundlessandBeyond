@@ -1,4 +1,196 @@
 
-a[href^="mailto"]::before {
-    content: "📧 ";
+/* Base Styles ----------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+img {
+  max-width: 100%
+}
+
+footer {
+  margin: 30px;
+  text-align: right;
+}
+/* Pseudo-classes----------------- */
+
+a:visited{
+  color: #2958F3;
+}
+
+/* Main Styles ------------------ */
+
+.main-header {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  height: auto;
+  background: darkblue url('../img/galaxyInfinityMilkyWay.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+
+.title {
+  color: white;
+  font: bold;
+  font-family: sans-serif;
+  font-size: 4rem;
+}
+
+.description{
+    font-family: sans-serif;
+}
+
+.navContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+  /* padding-top: 5px; */
+  padding: 10px;
+  background: none;
+  border-radius: 5px;
+  margin: 4px auto;
+  /* box-shadow: 0 1.5px 0 0 rgba(255, 0, 0, 0.5); */
+}
+
+
+.nav{
+  flex-grow: 1;
+  color: white;
+	padding: 20px;
+	margin: 2px;
+	background: #64339B;
+	border-radius: 10px;
+  box-shadow: 0 1.5px 0 0 grey;
+}
+
+.aboutReadings{
+  display: flex;
+  height: ;
+  font: 1em;
+  margin-top: 30px;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.spreads{
+  display: flex;
+  height: 300px;
+  width: auto;
+  margin-top: 30px;
+  padding: 30px
+  text-align: center;
+}
+
+.decks{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  width: auto;
+  height: ;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.deckImg {
+  flex-grow: 2;
+  font-size: 18px;
+  margin: 5px auto;
+}
+
+.orderForm{
+  /*display: flex;*/
+  height: auto;
+  width: auto;
+  font-size: 18px;
+  background-color: red;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 45px;
+  box-shadow: 0 1.5px 0 0 rgba(255, 0, 0, 0.5);
+}
+
+.aboutReader{
+  display: flex;
+  height: 300px;
+  width: auto;
+}
+
+.contactInfo{
+  display: flex;
+  height: 300px;
+  width: auto;
+}
+/* Floated Columns--------------  */
+
+.aboutReadings,
+.spreads,
+.decks {
+  width: 30%;
+  float: left;
+  margin: 10px;
+}
+
+.orderForm,
+.aboutReader,
+.contactInfo {
+  width: 30%;
+  float: left;
+  margin: 10px;
+}
+
+footer {
+  float: right;
+}
+/*
+.aboutReadings {
+  float: left;
+}
+
+.spreads {
+  float: center;
+}
+
+.decks {
+ float: right;
+} */
+/*for phone display*/
+@media query (max-width: 600px) {
+  .navContainer,
+  .aboutReadings {
+    max-width: 100%
+  }
+
+}
+
+/*tablets and computers*/
+@media only screen and (min-width: 601px) {
+  .navContainer {
+    max-width: 75%;
+  }
+  .aboutReadings {
+    max-width: 30%;
+  }
 }
