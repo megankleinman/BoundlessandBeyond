@@ -1,19 +1,146 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" type="text/css" href="main.css">
-<head>
+  <html>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <head>
     <title>Boundless and Beyond</title>
-</head>
+  </head>
 <body>
-  <h1><center>Boundless and Beyond</center><h1>
-  <h2><center>Personal Tarot Readings</center><h2>
+
+    <!--header -->
+    <header id="top" class="main-header">
+      <span class="title">Boundless and Beyond</span>
+      <div class="description"><h1>Personal Tarot</h1></div>
+
+    <!-- Navigation -->
+    <div class="navContainer">
+        <div class="aboutNav nav"><center><a href="#">About</a></center></div>
+        <div class="spreadsNav nav"><center><a href="#">Spreads</a></center></div>
+        <div class="decksNav nav"><center><a href="#">Decks</a></center></div>
+        <div class="orderFormNav nav"><center><a href="#">Order Form</a></center></div>
+        <div class="aboutReaderNav nav"><center><a href="#">About the Reader</a><center></div>
+    </div>
+    </header>
+
+    <!-- About Readings -->
+    <div class="aboutReadings">
+      <article>
+        <h3><center>About</center></h3>
+          <p>This section will give a description of tarot readings</p>
+      </article>
+    </div>
+
+    <!-- Spreads -->
+    <div class="spreads">
+      <article>
+        <h3><center>Spreads</center></h3>
+          <p>This section will tell which spreads are available for the customer to choose from.</p>
+            <ul>
+              <li>Spread One</li>
+              <li>Spread Two</li>
+              <li>Spread Three</li>
+            </ul>
+      </article>
+    </div>
+
+      <!--  Decks -->
+      <div class="titleDecks"><h3>Decks</h3></div>
+        <p><center>This section will show which decks may be used for the reading</center></p>
+        <div class="decks">
+            <div class="afterTarot deckImg"><h5>After Tarot</h5><img src="img/afterTarotDeck20.jpg"></div>
+            <div class="archangelOracle deckImg"><h5>Archangel Oracle</h5><img src="img/archangelOracleCardsDeck-2.jpg"></div>
+            <div class="beforeTarot deckImg"><h5>Before Tarot</h5><img src="img/beforeTarotDeck.jpg"></div>
+            <div class="doreenVirtueFairyTarot deckImg"><h5>Doreen Virtue's Fairy Tarot</h5><img src="img/doreenVirtueFairyTarotCardsDeck.jpg"></div>
+            <div class="doreenVirtueRomanceAngels deckImg"><h5>Doreen Virtue's Romance Angel Oracle</h5><img src="img/doreenVirtueRomanceAngels.jpg"></div>
+            <div class="riderWaiteTarotDeck deckImg"><h5>Rider Waite Tarot</h5><img src="img/riderWaiteTarotDeck.jpg"></div>
+            <div class="shapeshifterTarot deckImg"><h5>Shapeshifter Tarot</h5><img src="img/shapeshifterTarotDeck.jpg"></div>
+            <div class="theIlluminatedTarot deckImg"><h5>The Illuminated Tarot</h5><img src="img/theIlluminatedTarotDeck.jpg"></div>
+            <div class="theWisdomofTrees deckImg"><h5>The Wisdom of Trees Oracle</h5><img src="img/theWisdomoofTreesOracleDeck.jpg"></div>
+            <div class="viceVersaTarot deckImg"><h5>Vice Versa Tarot</h5><img src="img/viceVersaTarotPic.jpg"></div>
+          </div>
+
+        <!-- Order Form -->
+        <div class="orderForm">
+          <h3><center>Order Form:</center></h3>
+          <form action="index.html" method="post">
+
+            <fieldset>
+              <legend>Personal Information</legend>
+              First name:<br>
+              <input type="text" name="firstname"><br>
+              Last name:<br>
+              <input type="text" name="lastname"><br>
+              Email:<br>
+              <input type="email" name="customer_email"><br>
+              Phone Number:<br>
+              <input type="phonenumber" name="customer_phonenumber"><br>
+              Street Address:<br>
+              <input type="text" name="customer_streetaddress"><br>
+              City<br>
+              <input type="text" name="customer_city"><br>
+              Zip Code<br>
+              <input type="text" name="customer_zipcode"><br>
+          </fieldset>
+
+            <fieldset>
+              <legend>Please describe in detail either a question or situation of focus:</legend>
+              <textarea id="question" name="customer_question" style="width: 100%; height: 300px"></textarea><br>
+            </fieldset>
+
+            <fieldset>
+              <legend>Tarot Spreads</legend>
+              <input type="radio" name="readingOne" value="spreadOne"> Spread One<br>
+              <input type="radio" name="readingTwo" value="spreadTwo"> Spread Two<br>
+              <input type="radio" name="readingThree" value="spreadThree"> Spread Three<br>
+            </fieldset>
+
+            <fieldset>
+              <legend>Spread Cards</legend>
+              <input type="radio" name="riderWaite" type="riderWaite">Rider Waite Tarot Deck<br>
+              <input type="radio" name="fairy" type="fairy">Doreen Virtue Fairy Tarot Deck<br>
+              <input type="radio" name="shapeshifterTarot" type="shapeshifterTarot">Shapeshifter Tarot Deck<br>
+              <input type="radio" name="illuminated" type="illuminated">The Illuminated Tarot Deck<br>
+              <input type="radio" name="viceVersa" type="viceVersa">Vice Versa Tarot Deck<br>
+            </fieldset>
+
+            <fieldset>
+              <legend>Oracle Cards</legend>
+              <input type="radio" name="oracleArchangel" value="oracleArchangel">Archangel Oracle<br>
+              <input type="radio" name="oracleTrees" value="oracleTrees">The Wisdom of Trees Oracle<br>
+            </fieldset>
+
+            <fieldset>
+              <legend>Additional Clarifiers</legend>
+              <input type="radio" name="beforeTarot" value="beforeTarot">Before Tarot<br>
+              <input type="radio" name="afterTarot" value="afterTarot">After Tarot<br>
+              <input type="radio" name="romanceAngels" value="romanceAngels">Doreen Virtue Romance Angels<br>
+            </fieldset>
+
+            <center><button type="submit" onclick="alert('Thank you for your order!')">Order Reading</button></center>
+         </form>
+    </div>
+
+    <!-- About Reader -->
+    <div class="aboutReader">
+      <article>
+        <h3><center>About the Reader</center></h3>
+          <p>This section will tell details about the reader.</p>
+      </article>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contactInfo">
+      <article>
+        <h3><center>Contact Information</center></h3>
+        <address>
+          <a href="mailto:boundlessandbeyond@gmail.com">boundlessandbeyond@gmail.com</a><br/>
+        </address>
+      </article>
+    </div>
+    <script src=js/main.js></script>
 
 
 </body>
 <footer>
-  <p>Contact Information</p>
-  <address>
-    <a href="mailto:boundlessandbeyond@gmail.com">boundlessandbeyond@gmail.com</a><br/>
-  </address>
+    <p>&copy; 2019 Boundless and Beyond Tarot</p>
 </footer>
 </html>
