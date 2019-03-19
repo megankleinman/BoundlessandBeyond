@@ -1,26 +1,38 @@
+/* Font Import------------------ */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 /* Base Styles ----------------- */
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
-  background-color:;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  background-color: white;
+  height: auto;
 }
 
 h1 {
+  font-weight: 400;
+  font-size: 2.25rem;
+  text-transform: capitalize;
   margin: 0 0 30px 0;
   text-align: center;
+  color: white;
 }
 
 h3 {
-  margin: 0 0 30px 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0;
   text-align: center;
 }
 
 img {
-  max-width: 100%
+  display: block;
+  width: 100%;
 }
 
 footer {
@@ -44,15 +56,15 @@ a:visited{
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  color: white;
+  color: black;
   border-radius: 5px;
 }
 
 .title {
   color: white;
   font: bold;
-  font-family: sans-serif;
   font-size: 4rem;
+  text-transform: capitalize;
 }
 
 .description{
@@ -123,16 +135,16 @@ a:visited{
 }
 
 .orderForm{
-  /*display: flex;*/
-  height: auto;
+  /* display: flex; */
+  height: 300px;
   width: auto;
   font-size: 18px;
-  background-color: red;
+  background-color: ;
   padding: 10px;
   background: #fff;
   border-radius: 5px;
   margin: 45px;
-  box-shadow: 0 1.5px 0 0 rgba(255, 0, 0, 0.5);
+  /* box-shadow: 0 1.5px 0 0 rgba(255, 0, 0, 0.5); */
 }
 
 .aboutReader{
@@ -154,6 +166,11 @@ a:visited{
   width: 30%;
   float: left;
   margin: 10px;
+  min-width: 350px;
+  max-width: 600px;
+  text-align: center;
+  padding: 0px;
+  overflow: scroll;
 }
 
 
@@ -163,6 +180,11 @@ a:visited{
   width: 30%;
   float: left;
   margin: 10px;
+  min-width: 350px;
+  max-width: 600px;
+  text-align: center;
+  padding: 0px;
+  overflow: scroll;
 }
 
 footer {
@@ -279,12 +301,12 @@ footer {
   color: white;
 }
 
-img.demo {
+img.thumbnail {
   opacity: 0.6;
 }
 
 .active,
-.demo:hover {
+.thumbnail:hover {
   opacity: 1;
 }
 
