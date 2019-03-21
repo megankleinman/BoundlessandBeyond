@@ -228,31 +228,49 @@
 
             <fieldset>
               <legend>Tarot Spreads</legend>
-              <input type="radio" name="readingOne" value="spreadOne"> Spread One<br>
-              <input type="radio" name="readingTwo" value="spreadTwo"> Spread Two<br>
-              <input type="radio" name="readingThree" value="spreadThree"> Spread Three<br>
+              <p>Please select one spread:</p>
+              <select name="spreads">
+                <option value="monthAhead">Month Ahead</option>
+                <option value="yearAhead">Year Ahead</option>
+                <option value="singlesRomance">Singles Romance</option>
+                <option value="couplesRomance">Couples Romance</option>
+                <option value="soulMates">Soul Mates</option>
+                <option value="twinFlames">Twin Flames</option>
+                <option value="career">Career</option>
+              </select>
             </fieldset>
 
             <fieldset>
               <legend>Spread Cards</legend>
-              <input type="radio" name="riderWaite" type="riderWaite">Rider Waite Tarot Deck<br>
-              <input type="radio" name="fairy" type="fairy">Doreen Virtue Fairy Tarot Deck<br>
-              <input type="radio" name="shapeshifterTarot" type="shapeshifterTarot">Shapeshifter Tarot Deck<br>
-              <input type="radio" name="illuminated" type="illuminated">The Illuminated Tarot Deck<br>
-              <input type="radio" name="viceVersa" type="viceVersa">Vice Versa Tarot Deck<br>
+              <p>Please Select One</p>
+              <select name="spreadCards">
+                <option value="riderWaite">Rider Waite Tarot Deck</option>
+                <option value="fairy">Doreen Virtue Fairy Tarot Deck</option>
+                <option value="shapeshifterTarot">Shapeshifter Tarot Deck</option>
+                <option value="illuminated">The Illuminated Tarot Deck</option>
+                <option value="viceVersa">Vice Versa Tarot Deck</option>
+              </select>
             </fieldset>
 
             <fieldset>
               <legend>Oracle Cards</legend>
-              <input type="radio" name="oracleArchangel" value="oracleArchangel">Archangel Oracle<br>
-              <input type="radio" name="oracleTrees" value="oracleTrees">The Wisdom of Trees Oracle<br>
+              <p><bold>*Optional* $5 Charge</bold></p>
+              <p>Select Only One</p>
+              <select name="oracleCards">
+                <option value="oracleArchangel">Archangel Oracle</option>
+                <option value="oracleTrees">The Wisdom of Trees Oracle</option>
+              </select>
             </fieldset>
 
             <fieldset>
               <legend>Additional Clarifiers</legend>
-              <input type="radio" name="beforeTarot" value="beforeTarot">Before Tarot<br>
-              <input type="radio" name="afterTarot" value="afterTarot">After Tarot<br>
-              <input type="radio" name="romanceAngels" value="romanceAngels">Doreen Virtue Romance Angels<br>
+              <p>*optional* $5 Each</p>
+              <p>Use ctl/cmd key to select multiple options</p>
+              <select name="additionalClarifiers" multiple="multiple">
+                <option value="beforeTarot">Before Tarot</option>
+                <option value="afterTarot">After Tarot</option>
+                <option value="romanceAngels">Doreen Virtue Romance Angels</option>
+              </select>
             </fieldset>
 
             <center><button type="submit" onclick="alert('Thank you for your order!')">Order Reading</button></center>
@@ -262,7 +280,7 @@
     <!-- About Reader -->
     <div class="aboutReader" id="aboutReader">
       <article>
-        <h3><center>About the Reader</center></h3>
+        <h3>About the Reader</h3>
           <p>This section will tell details about the reader.</p>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
           </p>
@@ -272,7 +290,7 @@
     <!-- Contact Info -->
     <div class="contactInfo" id="contactInfo">
       <article>
-        <h3><center>Contact Information</center></h3>
+        <h3>Contact Information</h3>
         <address>
           <a href="mailto:boundlessandbeyond@gmail.com">boundlessandbeyond@gmail.com</a><br/>
         </address>
