@@ -38,4 +38,40 @@ Sets the height and width for the about the reader container.
 11. contactInfo
 Sets the height and width for the about the reader container.
 
-12. 
+12. column
+Sets the height and width for the individual objects within the decks flex container
+
+13. modal
+Lightbox that pulls up when image is clicked
+
+14. close
+Close button for the lightbox. Changes color when hovered over.
+
+15. mySlides
+Show the images under main image in Lightbox
+
+16. prev and next
+clickable buttons in lightbox to quickly switch between images.
+
+17. numbertext
+Shows which slide of how many.
+
+18. Two media queries: one for phones and another for tablets/computers.
+
+Custom JS Functions:
+The javascript functions I created are:
+
+1. openModal
+Shows modal/Lightbox
+
+2. closeModal
+Hides modal/lightbox window
+
+3. plusSlides
+Changes slide when arrow is clicked
+
+4. currentSlide
+Chages slide when arrow is clicked
+
+5. showSlides
+Opens the slide into the larger image when slide is clicked

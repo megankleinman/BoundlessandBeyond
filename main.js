@@ -9,19 +9,19 @@ function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
 
-var slideIndex = 1;
 // showSlides(slideIndex);
+var slideIndex = 1;
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// Thumbnail image controls
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
