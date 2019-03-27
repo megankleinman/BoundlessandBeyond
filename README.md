@@ -71,7 +71,7 @@ Hides modal/lightbox window
 Changes slide when arrow is clicked
 
 4. currentSlide
-Chages slide when arrow is clicked
+Shows current slide 
 
 5. showSlides
 Opens the slide into the larger image when slide is clicked
